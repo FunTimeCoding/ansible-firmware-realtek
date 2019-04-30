@@ -1,1 +1,5 @@
 ---
+- apt:
+    name: firmware-realtek
+  remote_user: root
+  when: ansible_os_family == 'Debian'
